@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap');
+
+html{
+
+  height: 100%;
+
+}
+
+body{
+
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.title{
+
+  text-align: center;
+  font-size: 3.5rem !important;
+  font-family: "Yellowtail", sans-serif !important;
+  color: white;
+  margin-top: 25px !important;
+  user-select: none;
+
+}
+
+.subtitle{
+
+  text-align: center;
+  font-size: 2rem !important;
+  font-family: "Roboto", sans-serif !important;
+  color: white;
+  user-select: none;
+
+}
+
+.crown{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7.5%;
+  user-select: none;
+
+}
+
+.card-title{
+
+  text-align: center;
+  font-weight: bold !important;
+
+}
+
+.card-subtitle{
+
+  text-align: center;
+  color: white !important;
+
+}
+
+.card-buttons{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#cards{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+}
+
+.left-card{
+
+  margin-right: 25px;
+  background-color: #3b3b3b !important;
+  color: white !important;
+
+}
+
+.middle-card{
+
+  background-color: #3b3b3b !important;
+  color: white !important;
+
+}
+
+.right-card{
+
+  margin-left: 25px;
+  background-color: #3b3b3b !important;
+  color: white !important;
+
+}
+
+.white-text{
+
+  color: white !important;
+
+}
+
+.link-text{
+
+  color: #7db7ff !important;
+
+}
+
+.footer{
+
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif !important;
+  margin-top: 4rem !important;
+  user-select: none;
+
+}
+
+.op-text{
+
+  color: white !important;
+  text-align: center;
+  margin-top: 20px !important;
+
+}
