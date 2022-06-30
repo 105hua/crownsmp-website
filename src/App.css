@@ -1,17 +1,544 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap');
 
-html{
+body{
 
-  height: 100%;
+  background-image: url("./images/background.webp");
 
 }
 
-body{
+.footer_text{
 
-  background-image: url("./images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.copy_ip_button{
+
+  background-color: #3b3b3b  !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  html{
+
+    height: 100%;
+  
+  }
+  
+  .title{
+  
+    text-align: center;
+    font-size: 3.5rem !important;
+    font-family: "Yellowtail", sans-serif !important;
+    color: white;
+    margin-top: 25px !important;
+    user-select: none;
+  
+  }
+  
+  .subtitle{
+  
+    text-align: center;
+    font-size: 1.25rem !important;
+    font-family: "Roboto", sans-serif !important;
+    color: white;
+    user-select: none;
+  
+  }
+  
+  .crown{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    user-select: none;
+  
+  }
+  
+  .card-title{
+  
+    text-align: center;
+    font-weight: bold !important;
+  
+  }
+  
+  .card-subtitle{
+  
+    text-align: center;
+    color: white !important;
+  
+  }
+  
+  .card-buttons{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .MuiPaper-root{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .left-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .middle-card{
+  
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .right-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .white-text{
+  
+    color: white !important;
+  
+  }
+  
+  .link-text{
+  
+    color: #7db7ff !important;
+  
+  }
+  
+  .footer{
+  
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+    margin-top: 4rem !important;
+    user-select: none;
+  
+  }
+  
+  .op-text{
+  
+    color: white !important;
+    font-family: "Roboto", sans-serif !important;
+    text-align: center;
+    margin-top: 20px !important;
+  
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  html{
+
+    height: 100%;
+  
+  }
+  
+  .title{
+  
+    text-align: center;
+    font-size: 3.5rem !important;
+    font-family: "Yellowtail", sans-serif !important;
+    color: white;
+    margin-top: 25px !important;
+    user-select: none;
+  
+  }
+  
+  .subtitle{
+  
+    text-align: center;
+    font-size: 1.5rem !important;
+    font-family: "Roboto", sans-serif !important;
+    color: white;
+    user-select: none;
+  
+  }
+  
+  .crown{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    user-select: none;
+  
+  }
+  
+  .card-title{
+  
+    text-align: center;
+    font-weight: bold !important;
+  
+  }
+  
+  .card-subtitle{
+  
+    text-align: center;
+    color: white !important;
+  
+  }
+  
+  .card-buttons{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .MuiPaper-root{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .left-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .middle-card{
+  
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .right-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .white-text{
+  
+    color: white !important;
+  
+  }
+  
+  .link-text{
+  
+    color: #7db7ff !important;
+  
+  }
+  
+  .footer{
+  
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+    margin-top: 4rem !important;
+    user-select: none;
+  
+  }
+  
+  .op-text{
+  
+    color: white !important;
+    font-family: "Roboto", sans-serif !important;
+    text-align: center;
+    margin-top: 20px !important;
+  
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  html{
+
+    height: 100%;
+  
+  }
+  
+  .title{
+  
+    text-align: center;
+    font-size: 3.5rem !important;
+    font-family: "Yellowtail", sans-serif !important;
+    color: white;
+    margin-top: 25px !important;
+    user-select: none;
+  
+  }
+  
+  .subtitle{
+  
+    text-align: center;
+    font-size: 1.8rem !important;
+    font-family: "Roboto", sans-serif !important;
+    color: white;
+    user-select: none;
+  
+  }
+  
+  .crown{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    user-select: none;
+  
+  }
+  
+  .card-title{
+  
+    text-align: center;
+    font-weight: bold !important;
+  
+  }
+  
+  .card-subtitle{
+  
+    text-align: center;
+    color: white !important;
+  
+  }
+  
+  .card-buttons{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .MuiPaper-root{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .left-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .middle-card{
+  
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .right-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .white-text{
+  
+    color: white !important;
+  
+  }
+  
+  .link-text{
+  
+    color: #7db7ff !important;
+  
+  }
+  
+  .footer{
+  
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+    margin-top: 4rem !important;
+    user-select: none;
+  
+  }
+  
+  .op-text{
+  
+    color: white !important;
+    font-family: "Roboto", sans-serif !important;
+    text-align: center;
+    margin-top: 20px !important;
+  
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  html{
+
+    height: 100%;
+  
+  }
+  
+  .title{
+  
+    text-align: center;
+    font-size: 3.5rem !important;
+    font-family: "Yellowtail", sans-serif !important;
+    color: white;
+    margin-top: 25px !important;
+    user-select: none;
+  
+  }
+  
+  .subtitle{
+  
+    text-align: center;
+    font-size: 2rem !important;
+    font-family: "Roboto", sans-serif !important;
+    color: white;
+    user-select: none;
+  
+  }
+  
+  .crown{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    user-select: none;
+  
+  }
+  
+  .card-title{
+  
+    text-align: center;
+    font-weight: bold !important;
+  
+  }
+  
+  .card-subtitle{
+  
+    text-align: center;
+    color: white !important;
+  
+  }
+  
+  .card-buttons{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .MuiPaper-root{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .left-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .middle-card{
+  
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .right-card{
+
+    background-color: #3b3b3b !important;
+    color: white !important;
+  
+  }
+  
+  .white-text{
+  
+    color: white !important;
+  
+  }
+  
+  .link-text{
+  
+    color: #7db7ff !important;
+  
+  }
+  
+  .footer{
+  
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif !important;
+    margin-top: 4rem !important;
+    user-select: none;
+  
+  }
+  
+  .op-text{
+  
+    color: white !important;
+    font-family: "Roboto", sans-serif !important;
+    text-align: center;
+    margin-top: 20px !important;
+  
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+html{
+
+  height: 100%;
 
 }
 
@@ -41,7 +568,7 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 7.5%;
+  width: 15%;
   user-select: none;
 
 }
@@ -65,16 +592,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-
-}
-
-#cards{
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 30px;
 
 }
 
@@ -126,7 +643,18 @@ body{
 .op-text{
 
   color: white !important;
+  font-family: "Roboto", sans-serif !important;
   text-align: center;
   margin-top: 20px !important;
+
+}
+
+#cards{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 }

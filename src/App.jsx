@@ -1,21 +1,23 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import CrownImage from "./images/crown.png";
-import DiscordImage from "./images/discord.png";
+import CrownImage from "./images/logo.webp";
+import DiscordImage from "./images/discord.webp";
 import FormsImage from "./images/forms.webp";
-import RATMediaImage from "./images/rmg.png";
-
+import RATMediaImage from "./images/rmg.webp";
 import Typography from "@mui/material/Typography";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 function App() {
 
   const [onlinePlayersNo, setOnlinePlayersNo] = React.useState(0);
   const [maxPlayersNo, setMaxPlayersNo] = React.useState(100);
+  const [isOpen, setOpen] = React.useState(false);
 
   const RefreshPlayers = () => {
 
@@ -26,7 +28,21 @@ function App() {
 
     });
 
-    console.log("Refreshed data.");
+  };
+
+  const ClickHandler = () => {
+
+    if(isOpen === true) return;
+    setOpen(true);
+    navigator.clipboard.writeText("play.crownsmp.org");
+
+  };
+
+  const OnClose = (event, reason) => {
+
+    if(reason === "clickaway") return;
+
+    setOpen(false);
 
   };
 
@@ -45,10 +61,26 @@ function App() {
       <img className="crown" src={CrownImage} />
 
       <Typography className="subtitle" variant="h2" component="div">
-
-        Semi-Vanilla Minecraft SMP
+        
+        👑 Semi-Vanilla 👑 Plugins 👑 Datapacks 👑 13+ 👑
 
       </Typography>
+
+      <div id="online-players">
+
+        <Typography className="op-text" variant="h5" component="div">
+
+          There are {onlinePlayersNo}/{maxPlayersNo} players online
+
+        </Typography>
+
+      </div>
+
+      <Button className="copy_ip_button" variant="contained" onClick={ClickHandler}>
+
+        Copy IP
+
+      </Button>
 
       <div id="cards">
 
@@ -137,7 +169,9 @@ function App() {
 
             <CardActions className="card-buttons">
 
-              <Button className="link-text" href="http://andrewh258.sg-host.com/" size="small">Check us out</Button>
+              {/* http://andrewh258.sg-host.com/ for when andy fixes the fkin site. */}
+
+              <Button className="link-text" size="small">Coming Soon</Button>
 
             </CardActions>
 
@@ -147,25 +181,15 @@ function App() {
 
       </div>
 
-      <div id="online-players">
+      <Snackbar open={isOpen} autoHideDuration={3000} onClose={OnClose}>
 
-        <Typography className="op-text" variant="h6" component="div">
+        <Alert onClose={OnClose} severity="success" sx={{ width: "100%" }}>
 
-          There are {onlinePlayersNo}/{maxPlayersNo} players online.
+          The IP has been copied to your clipboard!
 
-        </Typography>
+        </Alert>
 
-      </div>
-
-      <div>
-
-        <Typography className="footer" variant="h6" component="div">
-
-          CrownSMP, a Minecraft Server by RAT Media Group.
-
-        </Typography>
-
-      </div>
+      </Snackbar>
 
     </main>
 

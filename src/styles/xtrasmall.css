@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap');
+
+@media only screen and (max-width: 600px) {
+
+    html{
+
+        width: 100%;
+
+    }
+
+    body{
+
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+
+    }
+
+}
